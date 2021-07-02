@@ -1,12 +1,23 @@
 {
   "name": "whatsapp_frontend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Frontend del proyecto whatsapp",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathangg03/whatsapp_frontend.git"
+  },
+  "author": "Jonathan Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathangg03/whatsapp_frontend/issues"
+  },
+  "homepage": "https://github.com/jonathangg03/whatsapp_frontend#readme",
+  "devDependencies": {
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
 }
