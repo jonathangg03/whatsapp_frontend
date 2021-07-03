@@ -1,7 +1,8 @@
 import React from "react";
+import LeftMenu from "../components/LeftMenu";
 
 const Main = () => {
-  return <h1>Hola Main</h1>;
+  return <LeftMenu />;
 };
 
 export default Main;
