@@ -3,10 +3,10 @@ import LeftMenu from "../components/LeftMenu";
 import Chat from "../components/Chat";
 import "../styles/pages/Main.scss";
 
-const Main = () => {
+const Main = (props) => {
   return (
     <div className="main">
-      <LeftMenu />
+      <LeftMenu match={props.match} />
       <Chat />
     </div>
   );
