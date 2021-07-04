@@ -1,0 +1,90 @@
+@import "../Variables.scss";
+
+.chat {
+  width: calc(100% - 408px);
+  background-color: #0d1418;
+  height: 100vh;
+  &__menu {
+    background-color: $gray-bg-light;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 20px;
+    font-size: 1.5rem;
+    p {
+      font-weight: 600;
+    }
+    &-icon {
+      color: $gray-letters;
+    }
+  }
+  &__main {
+    height: calc(100% - 123px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 90px;
+
+    .message {
+      margin: 10px 0;
+      max-width: 700px;
+      font-size: 1.2rem;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .Recibido {
+      background-color: #262d31;
+      align-self: flex-start;
+    }
+
+    .Enviado {
+      align-self: flex-end;
+      background-color: #056162;
+    }
+  }
+  &__main::-webkit-scrollbar {
+    width: 5px; /* Tamaño del scroll en vertical */
+    height: 10px;
+    background: #394045;
+  }
+  &__main::-webkit-scrollbar-thumb {
+    background-color: #595f63;
+    border-radius: 2px;
+  }
+  &__actions {
+    height: 62px;
+    padding: 5px 10px;
+    background-color: $gray-bg-light;
+    &-form {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      input {
+        width: 94%;
+        height: 40px;
+        border-radius: 33px;
+        border: none;
+        padding-left: 20px;
+        color: white;
+        background-color: #33383b;
+      }
+      input:focus-visible {
+        outline: none;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        height: 30px;
+        width: 28px;
+        margin-left: 10px;
+        color: $gray-letters;
+        font-size: 2.7rem;
+        text-align: left;
+        line-height: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

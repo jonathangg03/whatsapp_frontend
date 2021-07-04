@@ -15,7 +15,7 @@ const LeftMenu = () => {
         <BiSearch className="left-search__icon" />
       </div>
       <div className="left-chats">
-        {[1, 2, 3].map((element) => (
+        {[].map((element) => (
           <div className="left-chats__message">
             <p className="left-chats__message-name">Nombre Apellido</p>
             <p className="left-chats__message-content">Este es el mensaje</p>

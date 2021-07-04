@@ -18,8 +18,8 @@ const Login = ({ users, getUsers }) => {
           <p>WHATSAPP WEB</p>
         </div>
       </header>
-      <div className="main">
-        <div className="main__content-container">
+      <div className="login-main">
+        <div className="login-main__content-container">
           <h1>Para usar whatsapp en tu computadora:</h1>
           <p>Selecciona el usuario con quien quieras ingresar:</p>
           <ul>
